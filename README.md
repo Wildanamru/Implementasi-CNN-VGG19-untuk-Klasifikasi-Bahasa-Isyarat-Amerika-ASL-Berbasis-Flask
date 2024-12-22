@@ -1,5 +1,7 @@
 
-![Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTb0qu3fC1MDco5o3odZ7t4L6BGu1gXC66EjIO4MngVXcFbpn4i2qiitFgLNVxQ5dyp8I&usqp=CAU)
+<p align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTb0qu3fC1MDco5o3odZ7t4L6BGu1gXC66EjIO4MngVXcFbpn4i2qiitFgLNVxQ5dyp8I&usqp=CAU" alt="Logo" />
+</p>
 
 
 # Implementasi CNN VGG19 untuk Klasifikasi Bahasa Isyarat Amerika (ASL) Berbasis Flask
