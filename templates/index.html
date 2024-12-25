@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Recognition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center" style="background-image: url('/static/assets/makima.jpeg');">
+    <div class="container mx-auto text-center py-12">
+        <h1 class="text-4xl font-bold text-white mb-6">Select a Model</h1>
+        <form method="post" action="/select_model" class="mb-6">
+            <div class="flex justify-center items-center space-x-4">
+                <select name="model" class="px-4 py-2 text-lg border border-blue-400 rounded-md">
+                    <option value="vgg">VGG Model</option>
+                    <option value="resnet">ResNet Model</option>
+                    <option value="inceptionv3">InceptionV3 Model</option>
+                </select>
+                <button type="submit" class="px-6 py-2 text-lg font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-400 transition">Switch Model</button>
+            </div>
+        </form>
+        <div class="status bg-white bg-opacity-80 rounded-lg p-4 mx-auto max-w-lg">
+            {% if selected_model %}
+            <p class="text-lg text-gray-800">Currently selected model: <strong>{{ selected_model }}</strong></p>
+            {% else %}
+            <p class="text-lg text-gray-800">No model selected yet.</p>
+            {% endif %}
+        </div>
+        <hr class="my-8 border-gray-400">
+        <h2 class="text-2xl font-bold text-white mb-4">Live Video Feed</h2>
+        <div class="flex justify-center">
+            <img src="/video_feed" class="rounded-lg shadow-lg border border-gray-200">
+        </div>
+    </div>
+</body>
+</html>
